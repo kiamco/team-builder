@@ -1,9 +1,13 @@
 import React, { useState } from 'react';
 
 const TeamFrom = (props) =>{
+
+    const submitTeamData = (event) => {
+        event.preventDefault();
+    }
     return(
         <div className='team-form'>
-        <form>
+        <form onSubmit={submitTeamData}>
             <label htmlFor="employee name">Name</label>
             <input type="text" name='employee name' placeholder='name'/>
             <label htmlFor="age">Age</label>
