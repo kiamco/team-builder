@@ -1,0 +1,17 @@
+form{
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-around;
+}
+
+form label{
+  margin-top:10px;
+}
+
+form button{
+  margin-top:10px;
+}
+.team-form{
+  width: 300px;
+  margin:10px auto;
+}
