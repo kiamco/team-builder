@@ -4,7 +4,14 @@ import TeamList from './components/teamList.js'
 import './App.css';
 
 function App() {
-  const [teamMember, setTeamMember] = useState([{}]);
+  const [teamMember, setTeamMember] = useState([{
+    name: '',
+    age: '',
+    id: '',
+    birthday: '',
+    address: '',
+    job: ''
+  }]);
 
   const addNewTeammate = newMember => {
     setTeamMember([...teamMember, newMember]);
