@@ -5,14 +5,13 @@ const TeammateCard = (props) => {
 
     return(
         <div className='teammate-card'>
-            <img src='../img/unknown_photo.jpg' alt='team member' />  
             <div className='details'>
-                <h1>Name: {name}</h1>
-                <h3>age: {age}</h3>
-                <h3>ID: {id}</h3>
-                <h3>Date of Birth: {birthday}</h3>
-                <h3>Address: {address}</h3>
-                <h3>Occupation: {job}</h3>
+                <h4>Name: {name}</h4>
+                <h4>age: {age}</h4>
+                <h4>ID: {id}</h4>
+                <h4>Date of Birth: {birthday}</h4>
+                <h4>Address: {address}</h4>
+                <h4>Occupation: {job}</h4>
             </div>
         </div>
     )
