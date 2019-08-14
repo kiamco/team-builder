@@ -1,16 +1,18 @@
-import React from 'react'
+import React, { useState } from 'react'
 
 const TeammateCard = (props) => {
+    const { name, age, id, birthday, address, job } = props;
+
     return(
         <div className='teammate-card'>
-            <img src='#' alt='team member' />  
+            <img src='../img/unknown_photo.jpg' alt='team member' />  
             <div className='details'>
-                <h1>Name</h1>
-                <h3>age</h3>
-                <h3>ID</h3>
-                <h3>Date of Birth</h3>
-                <h3>Address</h3>
-                <h3>Occupation</h3>
+                <h1>Name: {name}</h1>
+                <h3>age: {age}</h3>
+                <h3>ID: {id}</h3>
+                <h3>Date of Birth: {birthday}</h3>
+                <h3>Address: {address}</h3>
+                <h3>Occupation: {job}</h3>
             </div>
         </div>
     )
