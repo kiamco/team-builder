@@ -1,4 +1,6 @@
 import React, { useState } from 'react';
+import { Form } from 'semantic-ui-react';
+
 
 const TeamFrom = (props) =>{
 
@@ -20,6 +22,7 @@ const TeamFrom = (props) =>{
         const newTeamMember = {...teammateInfo};
         props.addNewTeammate(newTeamMember);
     };    
+    
     return(
         <div className='team-form'>
         <form onSubmit={submitTeamData}>
@@ -30,7 +33,6 @@ const TeamFrom = (props) =>{
                 placeholder='name'
                 onChange={changeHandler}
             />
-            
             <label htmlFor="age">Age</label>
             <input 
                 type="text" 
